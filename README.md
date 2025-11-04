@@ -11,7 +11,9 @@ This pakage includes:
 
   Create an object:
 
-    myObj = GenKFlib.KFobject(FirstMeasure(vector), FilterParameter(scalar))
+    myObj = GenKFlib.KFobject(FirstMeasure(vector), FilterParameter(scalar or vector))
+
+        The filter parameter is the covariance of the noise in each dimension. If different depending on the dimension, send a vector of the same size as the measure
 
   To estimate recusively the stats of the time series:
 
